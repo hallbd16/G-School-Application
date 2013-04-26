@@ -33,3 +33,24 @@ while (fibonacci(j) <15) {
 console.log("the term value is: " + termValue)
 console.log("The set of even fibanacci numbers is: " + arr);
 console.log("The sum of the even fibonacci numbers is " + answer);
+
+
+/*
+Debrief:  
+I also thought of a quicker way that did not require a recursive function, 
+however, I wanted to explore the programming more than just solving a math program.
+
+Seeing that a recursive function can be viewed as three repeating values 
+where every third term beggining at the second term is even(b).  (a, 2, c, a, 8, c, a, 34, c, a, even(b), c ...) 
+
+a=1;
+b=2; //this is always the even term
+c=3;
+
+while (b< 4000000) {
+b += b;
+a= b + c;
+b= c + a;
+c= a + b;
+}
+*/
